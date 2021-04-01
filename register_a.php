@@ -2,6 +2,7 @@
 extract($_POST);
 include("database.php");
 $sql=mysqli_query($conn,"SELECT * FROM register where Email='$email'");
+
 if(mysqli_num_rows($sql)>0)
 {
     echo "Email Id Already Exists"; 
